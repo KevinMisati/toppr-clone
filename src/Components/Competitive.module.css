@@ -1,0 +1,4 @@
+.competitive-plans{
+    display: flex;
+    flex-wrap: wrap;
+}

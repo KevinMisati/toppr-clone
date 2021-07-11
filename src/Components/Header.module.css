@@ -4,13 +4,16 @@
     margin: 0 auto;
     border-bottom: 1px solid #ededed;
     background-color: #fff;
+    
+}
+header{
+    width: 100%;
     max-width:1180px;
+    margin: auto;
 }
 .header-container ul{
 line-height: 1.3;
 font-weight: 400;
-
-
 --textColor: hsla(0,0%,100%,.5);
 --activeTextColor: #fff;
 --activeBorderColor: #fff;
@@ -58,3 +61,12 @@ background: 0 0;
 text-decoration: none;
 cursor: pointer;
 color: inherit;
+}
+@media screen and (max-width:767px){
+    .header-container{
+        overflow: scroll;
+    }
+    
+
+
+}

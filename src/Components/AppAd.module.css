@@ -1,0 +1,49 @@
+.app-ad{
+    display: flex;
+    margin-bottom:170px ;
+}
+.app-ad li {
+    list-style: none;
+}
+.app-ad h1 {
+    font-size: 60px;
+    color: #000;
+    letter-spacing: -1px;
+    line-height: 70px;
+    text-align: left;
+}
+.blue{
+    background-image: linear-gradient(90deg,#2196fb 0,#35cdfd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 67px;
+}
+.app-ad ul {
+    display: flex;
+    justify-content: space-between;
+    width: 395px;
+    text-align: left;
+}
+.apps-logos{
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+}
+.apps-logos div {
+    background: #000;
+    
+   height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+.apps-logos div img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.img {
+    max-width: 800px;
+    height: 581px;
+}

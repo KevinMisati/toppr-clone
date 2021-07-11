@@ -1,0 +1,30 @@
+.most-awarded {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.most-awarded-item {
+   width: calc(33% - 10px);
+   display: flex;
+   padding: 20px;
+   border-radius: 10px;
+   border: 1px solid #dedede;
+   background: #fff;
+   color: #26252f;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.content {
+    text-align: left;
+}
+.content .name {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+}
+.description {
+    opacity: .6;
+    font-size: 14px;
+    letter-spacing: 0;
+}
