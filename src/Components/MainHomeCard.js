@@ -19,9 +19,9 @@ const MainHomeCard = ({ logo, img, text, clases, color}) => {
                 <div classNmae={classes["card-img"]}>
                     <img src={img} alt=""/>
                 </div>
-                <div>
+                <div className={classes.headings}>
                     <h2>{text.one}</h2>
-                    <h2>{text.two}</h2>
+                    <h2 style={{}}>{text.two}</h2>
                 </div>
                 <div className={classes.clases}>
                     {clases}

@@ -25,6 +25,9 @@ background-repeat: repeat;
 .cards{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1150px;
+    justify-content: center;
 }
 @media screen and (max-width:767px){
     .main-home h1{
@@ -32,4 +35,5 @@ background-repeat: repeat;
         text-align:center;
         letter-spacing: 1px;
     }
+    
 }
