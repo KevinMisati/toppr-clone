@@ -30,6 +30,6 @@ background-repeat: repeat;
     .main-home h1{
         font-size:var(--sm-headerFs);
         text-align:center;
-        letter-spacing: -.37px;
+        letter-spacing: 1px;
     }
 }
