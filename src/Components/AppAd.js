@@ -26,9 +26,9 @@ const AppAd = () => {
                 </ul>
                 <div className={classes["apps-logos"]}>
                     <div>
-                        <span>
+                       
                             <img src="https://static-cf.toppr.com/marketing/9783b4b/images/home/app-links/play-store.png" alt="" />
-                        </span>
+                       
                     </div>
                     <div>
                         <img src="https://static-cf.toppr.com/marketing/9783b4b/images/home/app-links/brand-apple.png" alt=""/>

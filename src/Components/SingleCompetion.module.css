@@ -5,13 +5,13 @@ box-shadow: 0 30px 60px rgba(213,215,225,.489811);
 border-radius: 20px;
 cursor: pointer;
 background: #fff;
-margin: 36px 0;
+margin:0 0 36px 0;
 padding: 8px 0; 
 max-width: 1150px;
 margin-left: 16px;
 display: flex;
 justify-content: center;
-width: calc(33% - 4px);
+width: calc(33% - 36px);
 height: auto;
 flex-wrap: wrap;
 }

@@ -1,11 +1,12 @@
 .most-awarded {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .most-awarded-item {
-   width: calc(33% - 10px);
+   width: calc(33% - 16px);
    display: flex;
+   margin-right: 16px;
    padding: 20px;
    border-radius: 10px;
    border: 1px solid #dedede;
@@ -27,4 +28,45 @@
     opacity: .6;
     font-size: 14px;
     letter-spacing: 0;
+}
+@media screen and (max-width:767px){
+    .most-awarded-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .most-awarded-container h2{
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+        color: #545465;
+        text-align: center;
+    }
+    
+    .most-awarded{
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    .most-awarded-item {
+        flex-direction: column;
+        margin-right: 7px;
+        width: calc(33% - 14px);
+        justify-self: stretch;
+      
+        
+    }
+    
+    .content .name {
+        font-size: 12px;
+        letter-spacing: -.3px;
+        line-height: 14px;
+        width: auto;
+        padding-bottom: 4px;
+        margin: 10px 0 6px;
+    }
+    .content .description {
+        font-size: 10px;
+        opacity: .6;
+        line-height: 13px;
+    }
 }

@@ -1,4 +1,27 @@
 .competitive-plans{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.competitive-plans-container h1{
+    font-size: 60px;
+    line-height: 88px;
+    text-align: center;
+    letter-spacing: -2.7px;
+    margin-bottom: 30px;
+    color: #26252f;
+}
+@media screen and (max-width:767px){
+    .competitive-plans-container h1{
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -.8px;
+        font-weight: 800;
+        text-align: center;
+         margin-bottom: 20px;
+       
+    }
 }

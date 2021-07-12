@@ -5,7 +5,7 @@ import mostAwarded from '../data/MostAwarded'
 const MostAwarded = () => {
     return (
         <div className={classes["most-awarded-container"]}>
-            <h2>India's most awarded edtech platform</h2>
+        <h2 className={classes.heading}>India's most awarded edtech platform</h2>
         <div className={classes["most-awarded"]}>
             {
                 mostAwarded.map(({ img, title, desc }) => {

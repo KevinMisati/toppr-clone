@@ -9,7 +9,8 @@
     color: #000;
     letter-spacing: -1px;
     line-height: 70px;
-}.heading .blue{
+}
+ .blue{
     background-image: linear-gradient(90deg,#2196fb 0,#35cdfd);
     -webkit-background-clip: text;
     background-clip: text;
@@ -86,4 +87,39 @@
     letter-spacing: 1.82px;
    
 }
+.heading-mobile{
+    display: none;
+}
 /* end of section four */
+
+@media screen and (max-width:767px){
+    .heading{
+        display: none;
+    }
+    .heading-mobile{
+    display: block;
+    font-size:22px;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: -.37px;
+
+}
+    .desc{
+        display: none;
+    }
+    .section-three{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+.section-four{
+        width: 202px;
+        height: 40px;
+        border-radius: 12px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+    .section-four button  {
+      font-size: 10px;
+      letter-spacing: 1.67px;
+    }
+}

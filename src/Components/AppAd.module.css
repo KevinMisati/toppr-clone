@@ -1,6 +1,7 @@
 .app-ad{
     display: flex;
     margin-bottom:170px ;
+    justify-content: center;
 }
 .app-ad li {
     list-style: none;
@@ -38,12 +39,63 @@
     margin-right: 10px;
     padding: 10px 20px;
 }
-.apps-logos div img {
+.img {
+    max-width: 800px;
+    height: 581px;
+    margin: auto;
+}
+.img img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
-.img {
-    max-width: 800px;
-    height: 581px;
+
+@media screen and (max-width:767px){
+    .app-ad{
+        flex-direction: column;
+    }
+    .app-ad ul img {
+        height: 42px;
+    }
+    .info h1{
+        font-size: 22px;
+        letter-spacing: -.37;
+        line-height: 27px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    ul{
+        max-width: 260px;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .app-ad li h3{
+        font-size: 13.3px;
+        margin-top: 12px;
+        margin-top: 5px;
+    }
+    .app-ad li p{
+        height: 16px;
+        font-size: 10px;
+        line-height: 1.71;
+        text-align: center;
+        color: #9898a3;
+        font-weight: 400;
+    }
+    .apps-logos {
+        justify-content: center;
+    }
+    .apps-logos div{
+        height: 23px;
+        padding: 5px 15px;
+        width: 115px;
+        height: 36px;
+    }
+    .app-ad .img {
+        width: 320px;
+        height: 222.8px;
+        margin: 45px auto;
+       
+    }
 }

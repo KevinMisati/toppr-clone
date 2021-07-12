@@ -5,6 +5,10 @@ const BoadsSection = () => {
     return (
         <div className={classes["boards-section"]}>
             <div className={classes["section-one"]}>
+                <div className={classes["heading-mobile"]}>
+                    <p>Built for all boards and exams with </p>
+                    <p> <span className={classes.blue}>widest syllabus</span>  coverage </p>
+                </div>
                 <div className={classes.heading}>
                     <p>Built for all boards </p>
                     <p>and exams with </p>
