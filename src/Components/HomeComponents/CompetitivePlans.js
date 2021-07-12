@@ -1,5 +1,5 @@
 import React from 'react'
-import Competitive from "../data/Competitive"
+import Competitive from "../../data/Competitive"
 import SingleCompetion from "./SingleCompetion"
 import classes from "./Competitive.module.css"
 

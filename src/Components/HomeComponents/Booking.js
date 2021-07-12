@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Booking.module.css'
-import {ButtonArrow} from "../../src/Icons"
+import {ButtonArrow} from "../../../src/Icons"
 
 const Booking = () => {
     return (

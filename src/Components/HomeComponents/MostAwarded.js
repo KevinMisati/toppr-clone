@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./MostAwarded.module.css"
-import mostAwarded from '../data/MostAwarded'
+import mostAwarded from '../../data/MostAwarded'
 
 const MostAwarded = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./HomeHeader.module.css"
-import Button from "../UI/Button"
+import Button from "../../UI/Button"
 
 const HomeHeader = () => {
     return (

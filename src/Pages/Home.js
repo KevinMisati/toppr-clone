@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from "./Home.module.css"
-import HomeHeader from "../Components/HomeHeader"
-import MainHome from "../Components/MainHome"
-import CompetitivePlans from "../Components/CompetitivePlans"
-import MostAwarded from "../Components/MostAwarded"
-import BoardsSection from "../Components/BoadsSection"
-import AppAd from '../Components/AppAd'
-import Booking from '../Components/Booking'
+import HomeHeader from "../Components/HomeComponents/HomeHeader"
+import MainHome from "../Components/HomeComponents/MainHome"
+import CompetitivePlans from "../Components/HomeComponents/CompetitivePlans"
+import MostAwarded from "../Components/HomeComponents/MostAwarded"
+import BoardsSection from "../Components/HomeComponents/BoadsSection"
+import AppAd from '../Components/HomeComponents/AppAd'
+import Booking from '../Components/HomeComponents/Booking'
 
 
 const Home = () => {

@@ -10,7 +10,8 @@ const CardsData = [
             two: "for school and exams"
         },
         clases: "classes 5-12",
-        color: "#249efc"
+        color: "#249efc",
+        id:1
     },
 
     {
@@ -24,7 +25,8 @@ const CardsData = [
             two: "for young learners"
         },
         clases: "classes 1-12",
-        color: "#a314d4"
+        color: "#a314d4",
+        id: 2
     },
 
     {
@@ -38,7 +40,8 @@ const CardsData = [
             two: "for instant answers"
         },
         clases: "classes 5-12",
-        color: "#03e196"
+        color: "#03e196",
+        id: 3
     },
     {
         logo: {
@@ -51,7 +54,8 @@ const CardsData = [
             two: "operating system for K12"
         },
         clases: "classes KG-12",
-        color: "#f66"
+        color: "#f66",
+        id: 4
     }
 ]
 

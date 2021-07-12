@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./BoardsSection.module.css"
-import {ButtonArrow} from "../../src/Icons" 
+import {ButtonArrow} from "../../../src/Icons" 
 const BoadsSection = () => {
     return (
         <div className={classes["boards-section"]}>

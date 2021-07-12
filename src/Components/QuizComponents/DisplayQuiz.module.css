@@ -1,0 +1,29 @@
+.display-quiz-container{
+    width: 100%;
+    max-width: 1150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display-quiz ul{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.display-quiz li{
+    list-style: none;
+    background: #d9e8f7;
+    padding: 10px 30px;
+    margin: 8px;
+    border-radius: 10px;
+    width: calc(50% - 16px);
+    display: block;
+    text-align: center;
+}
+.display-quiz li:hover {
+    cursor: pointer;
+}

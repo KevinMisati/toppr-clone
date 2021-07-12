@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from "./Header.module.css"
+import {Link} from "react-router-dom"
 
 const Header = () => {
     return (
@@ -9,6 +10,9 @@ const Header = () => {
                     <ul className="_219lr">
                         <li href="">
                             <img  src="//static-cf.toppr.com/marketing/9783b4b/images/homeIcon.svg" alt="home-icon" />
+                        </li>
+                        <li >
+                            <Link to="/quiz">QUIZ</Link>
                         </li>
                         <li >
                             <a href="/">LEARNING APP</a>

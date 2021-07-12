@@ -10,7 +10,8 @@ const CompetitiveData = [
             two: "for instant answers"
         },
         clases: "classes 5-12",
-        color: "#03e196"
+        color: "#03e196",
+        id:1
     },
     {
         logo: {
@@ -23,7 +24,8 @@ const CompetitiveData = [
             two: "for instant answers"
         },
         clases: "classes 5-12",
-        color: "#03e196"
+        color: "#03e196",
+        id: 2
     },
     {
         logo: {
@@ -36,7 +38,8 @@ const CompetitiveData = [
             two: "for instant answers"
         },
         clases: "classes 5-12",
-        color: "#03e196"
+        color: "#03e196",
+        id: 3
     },
 ]
 

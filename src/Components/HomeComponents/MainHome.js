@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from "./MainHome.module.css"
 import MainHomeCard from "./MainHomeCard"
-import CardsData from "../data/CardsData"
+import CardsData from "../../data/CardsData"
 
 
 const MainHome = () => {
