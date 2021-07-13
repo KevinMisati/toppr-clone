@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import classes from "./Questions.module.css"
 import DispalyQuiz from "./DisplayQuiz"
 const dummy_quiz = [
@@ -52,15 +52,27 @@ const Questions = () => {
 
         
     }, [])*/
-
-    const activeQuiz = dummy_quiz.filter(quiz => quiz.id == 1)
+    const [id, setId] = useState(1)
+    const [questionsAreOver,setQuestionsAreOver] = useState(false)
+    const activeQuiz = dummy_quiz.filter(quiz => quiz.id == id)
     console.log(activeQuiz)
+    const idSetter = () => {
+        setId(prev => prev + 1)
+        if (id > dummy_quiz.length-1) {
+            setQuestionsAreOver(true)
+        }
+    }
+    
     return (
+       <div className={classes["questions-container"]}>
         <div className={classes.Questions}>
             
-            <h1>{activeQuiz.question}</h1>
-           <DispalyQuiz activeQuiz={activeQuiz} />
+            {!questionsAreOver ? <> <h1>{activeQuiz.question}</h1>
+                    <DispalyQuiz onQuestionsOver={questionsAreOver} onIdSetter={idSetter} activeQuiz={activeQuiz} /> 
+            </> : <p>You successfuly completed all the questions</p>}
+            </div>
         </div>
+            
     )
 }
 

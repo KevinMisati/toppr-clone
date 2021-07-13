@@ -9,7 +9,9 @@ const Header = () => {
                 <nav>
                     <ul className="_219lr">
                         <li href="">
-                            <img  src="//static-cf.toppr.com/marketing/9783b4b/images/homeIcon.svg" alt="home-icon" />
+                            <Link to="/">
+                                <img src="//static-cf.toppr.com/marketing/9783b4b/images/homeIcon.svg" alt="home-icon" />
+                            </Link>
                         </li>
                         <li >
                             <Link to="/quiz">QUIZ</Link>

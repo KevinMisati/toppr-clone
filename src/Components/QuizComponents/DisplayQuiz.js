@@ -1,24 +1,39 @@
 import React,{useState} from 'react'
 import classes from "./DisplayQuiz.module.css"
+ import {ButtonArrow}  from "../../Icons"
 
-const DisplayQuiz = ({ activeQuiz }) => {
-    const [dispayButton,setDisplayButton] = useState(false)
+const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
+    const [dispayButton, setDisplayButton] = useState(false)
+    const [isCorrect, setIsCorrect] = useState(false)
+    const [showIsCorrectOrWrong,setShowIsCorrectOrWrong] = useState(false)
     const quiz = activeQuiz[0]
     console.log(activeQuiz[0].answeroption)
     const handleClick = (e) => {
        
         if (e.target.textContent == quiz.correct_answer) {
-
+           /*  setTimeout(()=>(showIsCorrectOrWrong(true)),100) */
+            setShowIsCorrectOrWrong(true)
+            setIsCorrect(true)
             console.log(e.target.textContent)
             setDisplayButton(true)
         }
+        else {
+            setShowIsCorrectOrWrong(true)
+            setIsCorrect(true)
+            console.log(e.target.textContent)
+            setDisplayButton(true)
+            setIsCorrect(false)
+       }
     }
+   
     const handleNextClick = () => {
-        
+       
+        onIdSetter()
     }
     return (
         <div className={classes["display-quiz-container"]}>
         <div className={classes["display-quiz"]}>
+                {showIsCorrectOrWrong && <p className={isCorrect ? classes.right : classes.wrong}>{isCorrect ? "Congratulations! you got it right." : "Please try again"}</p>}
             <h3>{quiz.question}</h3>
             <ul>
                 {
@@ -29,8 +44,8 @@ const DisplayQuiz = ({ activeQuiz }) => {
                     })
                 } 
                 </ul>
-                {dispayButton && <button onClick={handleNextClick}>Next</button>}
-            </div>
+                {dispayButton && <button className={classes["next-button"]} onClick={handleNextClick}>Next <ButtonArrow /></button>}
+            </div> : 
         </div>
     )
 }
