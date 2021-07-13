@@ -32,7 +32,7 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
     }
    
     const handleNextClick = () => {
-       
+        setShowIsCorrectOrWrong(false)
         onIdSetter()
     }
     return (
