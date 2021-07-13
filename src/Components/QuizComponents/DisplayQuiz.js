@@ -5,20 +5,25 @@ import classes from "./DisplayQuiz.module.css"
 const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
     const [dispayButton, setDisplayButton] = useState(false)
     const [isCorrect, setIsCorrect] = useState(false)
-    const [showIsCorrectOrWrong,setShowIsCorrectOrWrong] = useState(false)
+    const [showIsCorrectOrWrong, setShowIsCorrectOrWrong] = useState(false)
+    const [fading,setIsFading] = useState(false)
     const quiz = activeQuiz[0]
     console.log(activeQuiz[0].answeroption)
     const handleClick = (e) => {
        
         if (e.target.textContent == quiz.correct_answer) {
-           /*  setTimeout(()=>(showIsCorrectOrWrong(true)),100) */
-            setShowIsCorrectOrWrong(true)
+            setTimeout(() => { (setIsFading(true)) }, 2000)
+                setShowIsCorrectOrWrong(true)
+            
+            
             setIsCorrect(true)
             console.log(e.target.textContent)
             setDisplayButton(true)
         }
         else {
+            setTimeout(() => { (setIsFading(true)) }, 2000)
             setShowIsCorrectOrWrong(true)
+           
             setIsCorrect(true)
             console.log(e.target.textContent)
             setDisplayButton(true)

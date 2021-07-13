@@ -47,7 +47,19 @@
 .right{
     padding: 20px 30px;
     margin-bottom: 30px;
+    
+   /*  animation:fading 1s linear ;
+    animation-fill-mode:forwards; */
+
 }
+/* @keyframes fading {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
 .wrong{
     background: #f00;
     color: #fff;
