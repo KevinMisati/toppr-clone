@@ -6,6 +6,7 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
     const [dispayButton, setDisplayButton] = useState(false)
     const [isCorrect, setIsCorrect] = useState(false)
     const [background, setBackground] = useState("#d9e8f7")
+    const [backgroundB4submit,setBackgroundB4Submit] =useState(true)
     const [correctAnswers,setCorrectAnswes] =useState(0)
     const [showIsCorrectOrWrong, setShowIsCorrectOrWrong] = useState(false)
     const [fading,setIsFading] = useState(false)
@@ -13,7 +14,7 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
    
     const handleClick = (e) => {
         setDisplayButton(true)
-    /* setBackground("#95D6A2") */
+     setBackground("#95D6A2") 
        
         console.log(e.target.style.background)
         e.target.style.background = "#95D6A2";
@@ -26,8 +27,13 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
    
     const handleNextClick = () => {
         setShowIsCorrectOrWrong(false)
-       
+        setBackground("#d9e8f7")
         onIdSetter(correctAnswers)
+        const list = document.querySelectorAll(".list")
+        console.log(list)
+        for (let i = 0; i < list.length; i++){
+            list[i].style.background = "#d9e8f7"
+        }
     }
     return (
         <div className={classes["display-quiz-container"]}>
@@ -38,7 +44,7 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
                 {
                     quiz.answeroption.map((quiz) => {
                     return (
-                        <li style={{background:background}} onClick={handleClick}>{quiz}</li>
+                        <li className="list"  style={{ background:""}} onClick={handleClick}>{quiz}</li>
                     )
                     })
                 } 

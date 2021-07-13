@@ -24,7 +24,7 @@
 
 .display-quiz li{
     list-style: none;
-   /*  background: #d9e8f7; */
+    background: #d9e8f7; 
     padding: 10px 30px;
     margin: 8px;
     border-radius: 10px;
