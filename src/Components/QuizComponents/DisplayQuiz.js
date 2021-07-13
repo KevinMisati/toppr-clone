@@ -10,20 +10,27 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
     const [correctAnswers,setCorrectAnswes] =useState(0)
     const [showIsCorrectOrWrong, setShowIsCorrectOrWrong] = useState(false)
     const [fading,setIsFading] = useState(false)
+    const [userInput,setUserInput] = useState("")
     const quiz = activeQuiz[0]
    
     const handleClick = (e) => {
+        const list = document.querySelectorAll(".list")
+        setUserInput("")
+        for (let i = 0; i < list.length; i++) {
+            list[i].style.background = "#d9e8f7"
+        }
         setDisplayButton(true)
-     setBackground("#95D6A2") 
+    
+        setUserInput(e.target.textContent)
        
-        console.log(e.target.style.background)
         e.target.style.background = "#95D6A2";
-        if (e.target.textContent == quiz.correct_answer) {
+        if (userInput == quiz.correct_answer) {
             setCorrectAnswes(prev => prev + 1)
             
          }
         
     }
+  
    
     const handleNextClick = () => {
         setShowIsCorrectOrWrong(false)
