@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import classes from "./Questions.module.css"
 import DispalyQuiz from "./DisplayQuiz"
+import ReviewQuiz from "./ReviewQuiz"
 const dummy_quiz = [
     {
         "id": 2,
@@ -14,7 +15,8 @@ const dummy_quiz = [
         "topic": "Current Affairs",
         "explanation": "The first commercial consignment of GI-certified Jardalu mangoes from Bhagalpur, Bihar was exported to the United Kingdom. APEDA, in collaboration with Bihar government, Indian High Commission",
         "video": ".",
-        "answeroption": ['Bihar','Maharashtra','Andhra Pradesh','Uttar Pradesh']
+        "answeroption": ['Bihar', 'Maharashtra', 'Andhra Pradesh', 'Uttar Pradesh'],
+        "number": 1
     },
     {
         "id": 1,
@@ -28,35 +30,23 @@ const dummy_quiz = [
         "topic": "Current Affairs",
         "explanation": "The Ministry of Culture and Ministry of Ports, Shipping and Waterways signed a Memorandum of Understanding (MoU) for ‘Cooperation in Development of National Maritime Heritage Complex (NMHC) at Lothal, Gujarat’",
         "video": ".",
-        "answeroption": ["Maharashtra", "Gujarat", 'Tamil Nadu', 'Kerala']
+        "answeroption": ["Maharashtra", "Gujarat", 'Tamil Nadu', 'Kerala'],
+        "number":2
+
     }
 ]
 
 
 const Questions = () => {
-  /*   const fetchData = async () => {
-        try {
-            const res = await fetch("https://pure-beach-79386.herokuapp.com/mcq/?fbclid=IwAR0HOYSQb5zSqNEmCie95VUMbaAEu-51rR3agGYEGcQN7hy8Ctfi8vXw3AY.json")
-            
-            console.log(res)
-            const respnseData = await res.json()
-            console.log("hello")
-            console.log(respnseData)
-        }
-        catch(err){
-            console.log(err, "catch")
-        }
-    } 
-    useEffect(() => {
-        fetchData()
-
-        
-    }, [])*/
+ 
     const [id, setId] = useState(1)
+    const [correctAns,setCorrectAns] = useState(0)
     const [questionsAreOver,setQuestionsAreOver] = useState(false)
     const activeQuiz = dummy_quiz.filter(quiz => quiz.id == id)
-    console.log(activeQuiz)
-    const idSetter = () => {
+
+    
+    const idSetter = (correctAnswers) => {
+        setCorrectAns(correctAnswers)
         setId(prev => prev + 1)
         if (id > dummy_quiz.length-1) {
             setQuestionsAreOver(true)
@@ -69,7 +59,7 @@ const Questions = () => {
             
             {!questionsAreOver ? <> <h1>{activeQuiz.question}</h1>
                     <DispalyQuiz onQuestionsOver={questionsAreOver} onIdSetter={idSetter} activeQuiz={activeQuiz} /> 
-            </> : <p>You successfuly completed all the questions</p>}
+            </> :<ReviewQuiz correctAns={correctAns} quiz={dummy_quiz} />}
             </div>
         </div>
             

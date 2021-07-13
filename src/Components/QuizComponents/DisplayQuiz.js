@@ -5,35 +5,25 @@ import classes from "./DisplayQuiz.module.css"
 const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
     const [dispayButton, setDisplayButton] = useState(false)
     const [isCorrect, setIsCorrect] = useState(false)
+    const [background, setBackground] = useState("#d9e8f7")
+    const [correctAnswers,setCorrectAnswes] =useState(0)
     const [showIsCorrectOrWrong, setShowIsCorrectOrWrong] = useState(false)
     const [fading,setIsFading] = useState(false)
     const quiz = activeQuiz[0]
-    console.log(activeQuiz[0].answeroption)
+   
     const handleClick = (e) => {
-       
+        setDisplayButton(true)
+        setBackground("#95D6A2")
         if (e.target.textContent == quiz.correct_answer) {
-            setTimeout(() => { (setIsFading(true)) }, 2000)
-                setShowIsCorrectOrWrong(true)
-            
-            
-            setIsCorrect(true)
-            console.log(e.target.textContent)
-            setDisplayButton(true)
-        }
-        else {
-            setTimeout(() => { (setIsFading(true)) }, 2000)
-            setShowIsCorrectOrWrong(true)
-           
-            setIsCorrect(true)
-            console.log(e.target.textContent)
-            setDisplayButton(true)
-            setIsCorrect(false)
-       }
+            setCorrectAnswes(prev => prev + 1)
+         }
+        
     }
    
     const handleNextClick = () => {
         setShowIsCorrectOrWrong(false)
-        onIdSetter()
+       
+        onIdSetter(correctAnswers)
     }
     return (
         <div className={classes["display-quiz-container"]}>
@@ -44,7 +34,7 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
                 {
                     quiz.answeroption.map((quiz) => {
                     return (
-                        <li onClick={handleClick}>{quiz}</li>
+                        <li style={{background:background}} onClick={handleClick}>{quiz}</li>
                     )
                     })
                 } 
