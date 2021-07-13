@@ -13,9 +13,13 @@ const DisplayQuiz = ({ activeQuiz, onIdSetter, onQuestionsOver }) => {
    
     const handleClick = (e) => {
         setDisplayButton(true)
-        setBackground("#95D6A2")
+    /* setBackground("#95D6A2") */
+       
+        console.log(e.target.style.background)
+        e.target.style.background = "#95D6A2";
         if (e.target.textContent == quiz.correct_answer) {
             setCorrectAnswes(prev => prev + 1)
+            
          }
         
     }
