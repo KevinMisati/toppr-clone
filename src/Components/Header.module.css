@@ -70,8 +70,8 @@ color: inherit;
         margin: 0;
     }
     header{
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
         height: 100%;
         align-items: center;
          overflow-x: auto;
@@ -85,8 +85,4 @@ color: inherit;
     header{
        
     }
-
-    
-
-
 }

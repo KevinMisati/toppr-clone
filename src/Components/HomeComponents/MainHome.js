@@ -14,7 +14,7 @@ const MainHome = () => {
                 </div>
                 <div className={classes.cards}>
                     {CardsData.map(({ logo, img, text, clases, color })  => {
-                       return ( <MainHomeCard
+                    return ( <MainHomeCard
                             logo={logo}
                             img={img}
                             text={text}

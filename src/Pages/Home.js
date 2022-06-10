@@ -1,5 +1,4 @@
 import React from 'react'
-import classes from "./Home.module.css"
 import HomeHeader from "../Components/HomeComponents/HomeHeader"
 import MainHome from "../Components/HomeComponents/MainHome"
 import CompetitivePlans from "../Components/HomeComponents/CompetitivePlans"
@@ -11,8 +10,8 @@ import Booking from '../Components/HomeComponents/Booking'
 
 const Home = () => {
     return (
-        <div className={classes["home-container"]}>
-            <div className={classes.home}>
+        <div>
+            <div>
                 <HomeHeader />
                 <MainHome />
                 <CompetitivePlans />

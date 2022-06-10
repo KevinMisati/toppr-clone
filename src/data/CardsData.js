@@ -6,7 +6,7 @@ const CardsData = [
         },
         img: "https://static-cf.toppr.com/marketing/9783b4b/images/home/productLearnNew.png",
         text: {
-            one: "complete learning app",
+            one: "Complete learning app",
             two: "for school and exams"
         },
         clases: "classes 5-12",

@@ -16,7 +16,7 @@ const MainHomeCard = ({ logo, img, text, clases, color }) => {
                     </div>
                 </div>
 
-                <div classNmae={classes["card-img"]}>
+                <div className={classes["card-img"]}>
                     <img src={img} alt="" />
                 </div>
                 <div>

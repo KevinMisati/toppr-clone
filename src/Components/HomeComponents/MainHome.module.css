@@ -1,7 +1,6 @@
 .heading{
     margin: 60px auto 0 auto;
     max-width: 980px;
-    
 }
 .main-home h1 {
 line-height: 1.27;
@@ -30,6 +29,14 @@ background-repeat: repeat;
     justify-content: center;
 }
 @media screen and (max-width:767px){
+    .main-home h1{
+        font-size:var(--sm-headerFs);
+        text-align:center;
+        letter-spacing: 1px;
+    }
+    
+}
+@media screen and (max-width:567px){
     .main-home h1{
         font-size:var(--sm-headerFs);
         text-align:center;

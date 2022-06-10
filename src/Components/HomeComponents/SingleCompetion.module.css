@@ -75,3 +75,16 @@ font-weight: 800;
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:567px){
+    .main-home-card-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-img{
+        max-width: 90% !important;
+    }
+    .card-img img {
+        max-width: 100%; 
+}
+}
