@@ -8,7 +8,7 @@ const MainHomeCard = ({ logo, img, text, clases, color }) => {
                 <div className={classes["card-logo"]}>
                     <div className={classes["logo-img"]}>
                         <a href="/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Toppr_logo.png" alt="" />
+                            <img src="https://media.limelight.com/images/Toppr-logo-color-256.png" alt="" />
                         </a>
                     </div>
                     <div className={classes["card-name"]}>

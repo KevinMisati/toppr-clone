@@ -26,16 +26,15 @@ margin-top: 16px;
 }
 
 .card-logo{
-height: 50px;
-background: #fff;
- display: flex;
-    width: auto;
+    background: #fff;
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-around;
 }
 
 .logo-img {
-    width: 120px;
-    height: 45px;
+    width: 67px;
 }
 .logo-img img  {
 
@@ -43,19 +42,9 @@ background: #fff;
     height: 100%;
     object-fit: cover;
 }
-.card-name {
-    margin: auto 4px auto 2px;
-    border-radius: 5px;
-    height: 40px;
-    width: 150px;
-    background: linear-gradient(90deg,#239bfb .02%,#26a9fb 30.84%,#2ecdfc
-     88.7%,#30d5fc 100.02%);
-}
 .main-home-card p {
 cursor: pointer;
 font-size: 24px;
-line-height: 36px;
-height: 40px;
 letter-spacing: -.85px;
 color: #fff;
 text-align: center;
@@ -63,6 +52,16 @@ margin: auto;
 font-weight: 800;
 
 }
+.card-name {
+    margin: auto 4px auto 2px;
+    border-radius: 5px;
+    height: 30px;
+    vertical-align: center;
+    width: 120px;
+    background: linear-gradient(90deg,#239bfb .02%,#26a9fb 30.84%,#2ecdfc
+    88.7%,#30d5fc 100.02%);
+}
+
 
 /* card img */
 .card-img img {
@@ -86,5 +85,8 @@ font-weight: 800;
     }
     .card-img img {
         max-width: 100%; 
+}
+.card-name{
+    font-size: 20px;
 }
 }
