@@ -87,10 +87,14 @@
         justify-content: center;
     }
     .apps-logos div{
-        height: 23px;
+        height: 230px;
         padding: 5px 15px;
-        width: 115px;
-        height: 36px;
+        width: 125px;
+        height: auto;
+        object-fit: contain ;
+    }
+    .apps-logos img{
+        width: 100%;
     }
     .app-ad .img {
         width: 320px;
